@@ -1,0 +1,57 @@
+.add-blog-container {
+  max-width: 80rem;
+}
+
+.description-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.description-container label {
+  font-size: 1.8rem;
+  font-weight: 500;
+  letter-spacing: -0.75px;
+}
+
+.description-container textarea {
+  padding: 1.2rem 1.8rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #f1f1f1;
+  border-bottom: 0.3rem solid transparent;
+
+  font-family: inherit;
+  font-size: 1.6rem;
+  color: #444;
+
+  transition: all 0.35s;
+
+  width: 100%;
+  min-height: 60rem;
+}
+
+.description-container textarea:focus {
+  outline: none;
+  border-bottom: 0.3rem solid #caa226;
+}
+
+.btn--add-blog {
+  align-self: flex-start;
+  padding: 1.4rem 3rem;
+  font-size: 1.8rem !important;
+  background-color: #fcca2f;
+  text-transform: uppercase;
+}
+
+.btn--add-blog:hover {
+  transform: translateY(-0.25rem);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  background-color: #fdd559;
+}
+
+.btn--add-blog:active {
+  transform: translateY(0rem);
+  box-shadow: 0 0.15rem 0.5rem rgba(0, 0, 0, 0.15);
+  background-color: #fcca2f;
+}

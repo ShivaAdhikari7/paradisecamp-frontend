@@ -1,0 +1,172 @@
+::-moz-selection {
+  background: #393e23;
+  color: #fff;
+}
+
+::selection {
+  background: #393e23;
+  color: #fff;
+}
+
+.primary-heading,
+.secondary-heading,
+.tertiary-heading {
+  font-weight: 600;
+  letter-spacing: -0.1rem;
+  margin-bottom: 3.2rem;
+  line-height: 1.15;
+}
+
+.primary-heading {
+  font-size: 4.4rem;
+  color: #f4f4f4;
+}
+
+.secondary-heading {
+  font-size: 3.6rem;
+}
+
+.tertiary-heading {
+  font-size: 2.4rem;
+}
+
+.para-sm {
+  font-size: 1.6rem;
+  line-height: 1.4;
+  color: #f4f4f4;
+  margin-bottom: 3.2rem;
+}
+
+.para-md {
+  font-size: 2.4rem;
+  line-height: 1.4;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+  align-items: stretch;
+  justify-content: center;
+  gap: 2.4rem;
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+  align-items: stretch;
+  justify-content: center;
+  gap: 3.2rem;
+}
+
+a:link,
+a:visited,
+.btn-custom {
+  display: inline-block;
+  border: none;
+  border-radius: 5rem;
+  font-size: 1.6rem;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.35s;
+  text-decoration: none;
+}
+
+.btn-custom:disabled {
+  background-color: rgb(209, 208, 208);
+}
+
+.btn-custom:disabled:hover {
+  box-shadow: none;
+  transform: none;
+}
+
+.btn--big {
+  padding: 1.5rem 4rem;
+}
+
+.btn--hero {
+  background-color: #f4f4f4;
+  color: #666 !important;
+}
+
+.btn--hero:hover {
+  background-color: #fff;
+  color: #333 !important;
+  transform: scale(1.05);
+}
+
+.error-message {
+  color: #f03e3e;
+  font-size: 1.6rem;
+  margin-top: -1.6rem;
+}
+
+.warning-msg {
+  color: #c94848;
+  font-size: 3.2rem;
+  text-align: center;
+  padding-top: 6.4rem;
+}
+
+.no-page-warning {
+  color: #c94848;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4.8rem;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.5;
+}
+
+#map {
+  width: 100%;
+  height: 60vh;
+  margin-bottom: 3.2rem;
+  overflow: hidden;
+}
+
+@media (max-width: 59em) {
+  html {
+    font-size: 56.25%;
+  }
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+@media (max-width: 34em) {
+  html {
+    font-size: 50%;
+  }
+  .grid--4-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .grid--2-cols {
+    grid-template-columns: 1fr;
+  }
+}

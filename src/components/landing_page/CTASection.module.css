@@ -1,0 +1,97 @@
+.cta {
+  background-color: #fee597;
+  padding: 4.8rem 9.6rem;
+  margin: 4.8rem auto;
+  border-radius: 1.5rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+.cta-action-container {
+  display: flex;
+  align-items: center;
+  gap: 8rem;
+}
+
+.cta-login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.cta > p {
+  width: 75%;
+  margin-bottom: 3.2rem;
+}
+
+.cta-signup,
+.cta-login {
+  padding: 1.6rem 3.2rem;
+
+  font-family: inherit;
+  font-size: 1.8rem;
+
+  transition: all 0.35s;
+}
+
+.cta-signup {
+  background-color: #555;
+  color: #fff !important;
+  text-align: center;
+
+  position: relative;
+}
+
+.cta-signup::after {
+  content: 'OR';
+  position: absolute;
+  top: 50%;
+  right: -42%;
+  transform: translateY(-50%);
+  color: #555;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.cta-signup:hover {
+  background-color: #444;
+}
+
+.cta-login {
+  background-color: #fff;
+}
+
+.cta-login:hover {
+  background-color: #f4f4f4;
+}
+
+@media (max-width: 59em) {
+  .cta {
+    padding: 4.8rem;
+  }
+}
+
+@media (max-width: 34em) {
+  .cta {
+    padding: 2.4rem 2.4rem;
+  }
+
+  .cta > p {
+    width: 100%;
+    margin-bottom: 3.2rem;
+  }
+
+  .cta-signup,
+  .cta-login {
+    padding: 1.2rem 2.4rem;
+    font-size: 1.6rem;
+  }
+
+  .cta-action-container {
+    gap: 6.4rem;
+  }
+
+  .cta-login-container {
+    gap: 0.8rem;
+  }
+}

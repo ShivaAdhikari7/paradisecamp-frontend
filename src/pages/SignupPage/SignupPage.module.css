@@ -1,0 +1,20 @@
+.btn--signup {
+  align-self: flex-start;
+  padding: 1.4rem 3rem;
+  font-size: 1.8rem !important;
+  background-color: #828f44;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.btn--signup:hover {
+  transform: translateY(-0.25rem);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  background-color: #8f9a57;
+}
+
+.btn--signup:active {
+  transform: translateY(0rem);
+  box-shadow: 0 0.15rem 0.5rem rgba(0, 0, 0, 0.15);
+  background-color: #828f44;
+}
